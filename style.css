@@ -54,5 +54,6 @@ html,body{
     border: 2px solid #f99559;
     color: #f99559;
     transition-duration: 150ms;
+    cursor: pointer;
 }
 
