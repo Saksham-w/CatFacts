@@ -1,16 +1,20 @@
-const facts = document.querySelector('#facts')
-const btn = document.querySelector('.btn')
+document.addEventListener("DOMContentLoaded", function () {
+  const facts = document.querySelector("#facts");
+  const btn = document.querySelector(".btn");
 
-const catFactsUrl = 'https://catfact.ninja/fact'
+  const catFactsUrl = "https://catfact.ninja/fact";
 
-function loadCatFact(){
-    fetch(catFactsUrl).then((rawData)=>{
-        return rawData.json()
-      }).then((data)=>{
-      //   console.log(data.fact)
-        facts.innerHTML=data.fact
-      })      
-}
+  function loadCatFact() {
+    fetch(catFactsUrl)
+      .then((rawData) => {
+        return rawData.json();
+      })
+      .then((data) => {
+        //   console.log(data.fact)
+        facts.innerHTML = data.fact;
+      });
+  }
 
-btn.addEventListener('click',loadCatFact)
-loadCatFact()
+  btn.addEventListener("click", loadCatFact);
+  loadCatFact();
+});
