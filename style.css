@@ -64,7 +64,7 @@ html,body{
     padding: 0 50px;
 }
 #facts{
-    font-size: medium;
+    font-size: large;
 }
 #catpic{
     height: 225px;
@@ -81,7 +81,7 @@ html,body{
         height: 60%;
     }
     #facts{
-        font-size: medium;
+        font-size: large;
     }
     #catpic{
         height: 200px;
