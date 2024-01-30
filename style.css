@@ -57,6 +57,20 @@ html,body{
     cursor: pointer;
 }
 
+@media (width < 768px){
+.cont{
+    height: 90%;
+    width: 100%;
+}
+#facts{
+    font-size: medium;
+}
+#catpic{
+    height: 225px;
+    width: 175px;
+    margin-top: 5px;
+}
+}
 @media (width < 400px){
     .cont{
         height: 80%;
